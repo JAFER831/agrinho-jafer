@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projeto Agrinho - Conexão Campo e Cidade</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f1f1f1;
+      color: #333;
+    }
+
+    header {
+      background-color: #388e3c;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #2e7d32;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #81c784;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .banner {
+      width: 100%;
+      height: 300px;
+      background-image: url('https://images.unsplash.com/photo-1600211410131-1d4b925cbd93');
+      background-size: cover;
+      background-position: center;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+
+    .banner h2 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 1rem;
+      border-radius: 8px;
+    }
+
+    .container {
+      padding: 2rem;
+      text-align: center;
+    }
+
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      color: #388e3c;
+    }
+
+    .highlight {
+      background-color: #f1f8e9;
+      border-left: 5px solid #8bc34a;
+      padding: 1rem;
+      margin: 2rem 0;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 270px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      color: #388e3c;
+      margin: 0;
+    }
+
+    .button {
+      padding: 12px 24px;
+      background-color: #388e3c;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      display: inline-block;
+      margin-top: 1.5rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2e7d32;
+    }
+
+    footer {
+      background-color: #388e3c;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Projeto Agrinho</h1>
+    <p>🌿 Festejando a Conexão entre Campo e Cidade</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="feira.html">Feira</a>
+    <a href="oficinas.html">Oficinas</a>
+    <a href="visitas.html">Visitas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="banner">
+    <h2>Bem-vindo ao Projeto Agrinho!</h2>
+  </div>
+
+  <div class="container">
+    <section>
+      <h2 class="section-title">🌾 O que é o Projeto Agrinho?</h2>
+      <p>O Projeto Agrinho tem como objetivo conectar as escolas da cidade com a vida no campo, promovendo feiras, oficinas e visitas que aproximam a comunidade rural e escolar.</p>
+    </section>
+
+    <div class="highlight">
+      <h2>🌟 Nosso Propósito</h2>
+      <p>Nosso propósito é transformar o conhecimento sobre a agricultura, o meio rural e o processo de produção em uma experiência interativa e educativa para as crianças e jovens das escolas urbanas. Ao realizar atividades como feiras agrícolas e oficinas práticas, proporcionamos aprendizado valioso sobre sustentabilidade e inovação.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="feiras-do-agronegocio-no-brasil.webp" alt="Feira de produtos agrícolas">
+        <div class="card-content">
+          <h3>Feiras Agrícolas</h3>
+          <p>Participe de feiras que conectam produtores rurais e a comunidade escolar, com muitos produtos frescos e artesanais.</p>
+          <a href="feira.html" class="button">Saiba mais →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1592469752811-d6391ccf31b1" alt="Oficinas para estudantes">
+        <div class="card-content">
+          <h3>Oficinas Educativas</h3>
+          <p>Oficinas práticas que ensinam técnicas agrícolas e valores da vida rural para os estudantes, com foco na sustentabilidade.</p>
+          <a href="oficinas.html" class="button">Saiba mais →</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1595355760180-e3fcac6efc61" alt="Visitas educativas ao campo">
+        <div class="card-content">
+          <h3>Visitas ao Campo</h3>
+          <p>Visite propriedades rurais e entenda de perto como os agricultores trabalham, promovendo uma visão prática da vida no campo.</p>
+          <a href="visitas.html" class="button">Saiba mais →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Projeto Agrinho. Desenvolvido com ♥ pela comunidade escolar.</p>
+  </footer>
+
+</body>
+</html>

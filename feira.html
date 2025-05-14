@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Feiras Agrícolas - Projeto Agrinho</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+
+    header {
+      background-color: #388e3c;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+
+    nav {
+      background-color: #2e7d32;
+      padding: 1rem;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    nav a:hover {
+      background-color: #81c784;
+      padding: 8px;
+      border-radius: 5px;
+    }
+
+    .container {
+      padding: 2rem;
+    }
+
+    .highlight {
+      background-color: #f1f8e9;
+      border-left: 5px solid #8bc34a;
+      padding: 1rem;
+      margin: 2rem 0;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 300px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 1rem;
+      background-color: #388e3c;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2e7d32;
+    }
+
+    footer {
+      background-color: #388e3c;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+      margin-top: 4rem;
+    }
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Feiras Agrícolas - Projeto Agrinho</h1>
+    <p>🌾 Conectando a produção rural com a comunidade escolar</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="feira.html">Feira</a>
+    <a href="oficinas.html">Oficinas</a>
+    <a href="visitas.html">Visitas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="highlight">
+      <h2>🌟 Feira Agrícola: Aprendizado e Conexão</h2>
+      <p>As feiras agrícolas realizadas pelo Projeto Agrinho são espaços de exposição onde os estudantes podem aprender sobre a diversidade de produtos rurais, como frutas, legumes, artesanatos e técnicas de cultivo. Além disso, promovem a interação entre estudantes e produtores locais.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="consumir-produtos-locais-scaled-e1632757753983.jpg" alt="Feira agrícola com produtos locais">
+        <div class="card-content">
+          <h3>Produtos Locais</h3>
+          <p>Feiras com produtos frescos e naturais, promovendo a agricultura familiar e a sustentabilidade.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="blog-2698.jpg" alt="Exposição de artesanato no campo">
+        <div class="card-content">
+          <h3>Artesanato Rural</h3>
+          <p>Exposição de trabalhos manuais feitos por pequenos produtores e comunidades locais.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1599732877410-25b87a6a456b" alt="Stands de comida na feira">
+        <div class="card-content">
+          <h3>Gastronomia do Campo</h3>
+          <p>Sabores típicos do campo com receitas tradicionais e produtos frescos para os visitantes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="highlight">
+      <h2>📅 Como Participar</h2>
+      <p>Se você é produtor rural e deseja expor seus produtos nas próximas edições da feira, entre em contato conosco! As inscrições estão abertas para agricultores, cooperativas e artesãos que desejam participar.</p>
+      <a href="contato.html" class="button">Inscrever-se →</a>
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Projeto Agrinho. Desenvolvido com ♥ pela comunidade escolar</p>
+  </footer>
+
+</body>
+</html>

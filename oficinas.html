@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Oficinas - Projeto Agrinho</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      max-width: 300px;
+    }
+
+    .card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 1rem;
+    }
+
+    .card-content h3 {
+      margin-top: 0;
+      color: #2e7d32;
+    }
+
+    .card-content p {
+      font-size: 0.95rem;
+      color: #333;
+    }
+
+    .highlight {
+      background-color: #f1f8e9;
+      border-left: 5px solid #8bc34a;
+      padding: 1rem;
+      margin: 2rem 0;
+    }
+
+    .two-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+    }
+
+    .two-columns img {
+      max-width: 100%;
+      border-radius: 10px;
+      flex: 1;
+    }
+
+    .two-columns .text {
+      flex: 1;
+      min-width: 280px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      margin-top: 1rem;
+      background-color: #388e3c;
+      color: white;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Oficinas Educativas</h1>
+    <p>🌱 Vivências práticas sobre sustentabilidade, cultura e inovação rural</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Início</a>
+    <a href="feira.html">Feira</a>
+    <a href="oficinas.html">Oficinas</a>
+    <a href="visitas.html">Visitas</a>
+    <a href="contato.html">Contato</a>
+  </nav>
+
+  <div class="container">
+
+    <div class="highlight">
+      <h2>✨ Transformando conhecimento em experiência</h2>
+      <p>As oficinas do Projeto Agrinho são uma ponte entre teoria e prática, envolvendo os participantes em atividades sustentáveis, criativas e educativas que fortalecem os laços entre cidade e campo.</p>
+    </div>
+
+    <div class="cards">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1581578017420-5c4e738f7f78" alt="Oficina de reciclagem">
+        <div class="card-content">
+          <h3>Reciclagem Criativa</h3>
+          <p>Aprenda a reutilizar materiais do dia a dia, transformando lixo em arte, decoração e brinquedos.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1590402494682-bbfebd9edc2d" alt="Horta urbana">
+        <div class="card-content">
+          <h3>Horta Urbana</h3>
+          <p>Descubra como cultivar alimentos em pequenos espaços urbanos, incentivando a alimentação saudável e autossuficiente.</p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1605792657660-596af9009e82" alt="Saberes populares">
+        <div class="card-content">
+          <h3>Saberes do Campo</h3>
+          <p>Vivência com agricultores sobre plantas medicinais, cultura oral e tradições da vida rural.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="two-columns" style="margin-top: 4rem;">
+      <div class="text">
+        <h2>📅 Locais e horários</h2>
+        <ul>
+          <li><strong>Escola Municipal:</strong> 09h às 11h - segunda e quarta</li>
+          <li><strong>Associação Rural:</strong> 14h às 16h - terça e sexta</li>
+          <li><strong>Centro Comunitário:</strong> 16h30 às 18h - sábados</li>
+        </ul>
+        <a href="visitas.html" class="button">Ver visitas ao campo →</a>
+      </div>
+      <img src="https://images.unsplash.com/photo-1603232644141-485f43d2ad31" alt="Oficina prática no campo">
+    </div>
+
+  </div>
+
+  <footer>
+    <p>© 2025 Projeto Agrinho. Desenvolvido com ♥ pela comunidade escolar</p>
+  </footer>
+
+</body>
+</html>
